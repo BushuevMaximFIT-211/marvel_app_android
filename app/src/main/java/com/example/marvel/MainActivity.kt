@@ -16,12 +16,13 @@ import com.example.marvel.ui.theme.MarvelTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             MarvelTheme {
 
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = Color.Gray
+                    color = Color.DarkGray
                 ) {
                     HeroesPageScreen()
                 }
