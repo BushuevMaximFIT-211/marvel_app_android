@@ -1,8 +1,6 @@
 package com.example.marvel
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Card
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -19,8 +17,7 @@ import androidx.compose.ui.unit.sp
 fun HeroCard(hero: HeroMarvel) {
     val heroName = hero.name;
     val heroId = hero.resId;
-
-    Card(modifier = Modifier.fillMaxSize() .padding(16.dp), shape = RoundedCornerShape(50.dp),)
+    Box(modifier = Modifier.fillMaxSize() )
     {
 
         Image(painter = painterResource(id = heroId), contentDescription = null,
